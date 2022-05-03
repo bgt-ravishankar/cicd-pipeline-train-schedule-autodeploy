@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+     agent { dockerfile true }
     environment {
         //be sure to replace "bhavukm" with your own Docker Hub username
         DOCKER_IMAGE_NAME = "ravishdpi/devops2022"
